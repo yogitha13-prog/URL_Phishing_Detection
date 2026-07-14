@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Phishing Detection</title>
+
+    <style>
+
+        body{
+            text-align:center;
+            margin-top:100px;
+            font-family:Arial;
+        }
+
+        input{
+            width:400px;
+            padding:10px;
+        }
+
+        button{
+            padding:10px 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>URL Phishing Detection System</h1>
+
+<form action="/predict" method="post">
+
+    <input
+        type="text"
+        name="url"
+        placeholder="Enter URL"
+        required>
+
+    <br><br>
+
+    <button type="submit">
+        Check URL
+    </button>
+
+</form>
+
+<h2>
+{{ prediction_text }}
+</h2>
+
+</body>
+</html>
